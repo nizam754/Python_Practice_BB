@@ -1,4 +1,4 @@
-# This program counts the frequency of characters on a string.
+# This program counts the frequency of characters on a string...
 
 import pprint as pp
 
