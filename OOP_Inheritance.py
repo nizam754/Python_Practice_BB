@@ -38,3 +38,23 @@ class HouseBot(Robot):
         else:
             print('I CAN STILL CLEAN MORE AREA!')
 
+    @staticmethod
+    def halt():
+        print('I am halting.')
+
+    # overriding the forward method
+    def move_forward(self):
+        print('This is in House Bot class!')
+        super().move_forward()
+
+houseBot = HouseBot('Bob', 1.1, 50)
+print(houseBot.name)
+print(houseBot.version)
+houseBot.move_forward()
+houseBot.move_right()
+houseBot.clean()
+houseBot.clean()
+houseBot.clean()
+print(houseBot.area_covered)
+houseBot.set_cover_area(50)
+houseBot.clean()
